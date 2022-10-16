@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualZen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/vr-headset.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-container">
+            <img src="assets/cyberpunk2.gif" alt="Cyber punk animated background">
+            <div class="logo-container">
+                <div class="logo"><img src="assets/vr-headset.png" alt="Logo"><div>VirtualZen</div></div>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="description">
+                <p>
+                    Have you ever wanted to escape? What if you could be someone else? Are you ready to make your own reality?
+                    Sign up <em>now</em> to join us in the next era of immersive entertainment.
+                </p>
+            </div>
+            <div class="sign-up">                
+                <form action="javascript:void(0)" onsubmit="validateForm()">
+                    <div class="field">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" minlength="8" title="Password must be at least 8 characters long." required>
+                        
+                    </div>
+                    <div class="field">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
+                    </div>
+                    <div class="password-mismatch">* Passwords do not match</div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="existing-account">
+                Already a member? Log in <a href="#">here</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
